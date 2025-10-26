@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Joristoughness</defName>
+    <label>Better Toughness</label>
+    <description>The Body of the Supreme Mascot</description>
+
+    <!-- Display under Archite tab; change to Physical to test visibility -->
+    <displayCategory>Archite</displayCategory>
+
+    <iconPath>Genes/Joristoughness</iconPath>
+    <displayOrderInCategory>2055</displayOrderInCategory>
+
+    <biostatCpx>5</biostatCpx>
+    <biostatArc>3</biostatArc>
+    <biostatMet>5</biostatMet>
+
+    <!-- Food and overdose behavior -->
+    <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+    <dontMindRawFood>true</dontMindRawFood>
+    <overdoseChanceFactor>0.1</overdoseChanceFactor>
+
+    <!-- Stat offsets -->
+    <statOffsets>
+      <RestFallRateFactor>0.04</RestFallRateFactor>
+      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+      <ToxicEnvironmentResistance>5</ToxicEnvironmentResistance>
+      <ToxicResistance>5</ToxicResistance>
+      <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+      <ComfyTemperatureMax>70</ComfyTemperatureMax>
+    </statOffsets>
+
+    <!-- Stat factors -->
+    <statFactors>
+      <MoveSpeed>2.0</MoveSpeed>
+      <RawNutritionFactor>5.0</RawNutritionFactor>
+      <RestFallRateFactor>0.2</RestFallRateFactor>
+    </statFactors>
+
+    <!-- Capacity modifiers -->
+    <capMods>
+      <li>
+        <capacity>BloodPumping</capacity>
+        <offset>2.0</offset>
+      </li>
+      <li>
+        <capacity>BloodFiltration</capacity>
+        <offset>2.0</offset>
+      </li>
+      <li>
+        <capacity>Breathing</capacity>
+        <offset>2.0</offset>
+      </li>
+    </capMods>
+
+    <!-- Immunities -->
+    <makeImmuneTo>
+      <li>LungRot</li>
+      <li>LungRotExposure</li>
+    </makeImmuneTo>
+
+    <!-- Custom descriptions -->
+    <customEffectDescriptions>
+      <li>Doesn't need much food to stay in peak physique</li>
+      <li>Joriskin like speed</li>
+      <li>Joriskin work faster than others</li>
+      <li>Joriskin don't mind the weather</li>
+      <li>Joriskin are immune to food poisoning</li>
+    </customEffectDescriptions>
+
+    <!-- Optional: comment out exclusionTags while testing -->
+    <!--
+    <exclusionTags>
+      <li>Sleep</li>
+      <li>MoveSpeed</li>
+    </exclusionTags>
+    -->
+  </GeneDef>
+
+</Defs>

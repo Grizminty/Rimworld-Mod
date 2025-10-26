@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Joriskin</defName>
+    <label>Kinfolk of Joris</label>
+    <description>Pawn imbued with the powers of Joris.</description>
+
+    <!-- Display under Archite tab -->
+    <displayCategory>Archite</displayCategory>
+
+    <iconPath>Genes/Joriskin</iconPath>
+    <displayOrderInCategory>2058</displayOrderInCategory>
+
+    <biostatCpx>6</biostatCpx>
+    <biostatArc>3</biostatArc>
+    <biostatMet>0</biostatMet>
+
+    <painFactor>0.5</painFactor>
+
+    <statOffsets>
+      <InjuryHealingFactor>3.0</InjuryHealingFactor>
+      <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+    </statOffsets>
+
+    <statFactors>
+      <IncomingDamageFactor>0.7</IncomingDamageFactor>
+      <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+    </statFactors>
+
+    <damageFactors>
+      <Burn>0.5</Burn>
+      <Flame>0.6</Flame>
+    </damageFactors>
+
+    <makeImmuneTo>
+      <li>Flu</li>
+      <li>GutWorms</li>
+      <li>MuscleParasites</li>
+      <li>WoundInfection</li>
+    </makeImmuneTo>
+
+    <hediffGiversCannotGive>
+      <li>Carcinoma</li>
+      <li>DrugOverdose</li>
+      <li>BadBack</li>
+    </hediffGiversCannotGive>
+
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 1.2)</li>
+        <li>(20, 1.2)</li>
+        <li>(21, 0.5)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+
+    <customEffectDescriptions>
+      <li>Joriskin are tough</li>
+      <li>Joriskin don't fear fire</li>
+      <li>Joriskin live longer than most</li>
+      <li>Joriskin have enhanced healing and immunity</li>
+    </customEffectDescriptions>
+
+    <!-- Optional: comment out exclusionTags while testing -->
+    <!--
+    <exclusionTags>
+      <li>Healing</li>
+      <li>Immunity</li>
+    </exclusionTags>
+    -->
+  </GeneDef>
+
+</Defs>

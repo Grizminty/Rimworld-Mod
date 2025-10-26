@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>Joriskin</defName>
+    <label>Joriskin</label>
+    <description>A powerful humanoid xenotype designed for testing. Rapidly regenerates wounds, feels no pain, ignores environmental extremes, and stops aging past 21.</description>
+    <inheritable>true</inheritable>
+    <iconPath>Genes/Joriskin</iconPath>
+    <nameMaker>NamerFactionOutlander</nameMaker>
+    <nameMakerFemale>NamerFactionOutlander</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <genes>
+      <li>Joriskin</li>
+      <li>Joristoughness</li>
+      <li>Jorisbrains</li>
+      <li>Jorismuscle</li>
+      <li>Unstoppable</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Jorisbrains</defName>
+    <label>Bigger Brains</label>
+    <description>Joriskin are recognized for their heightened and supreme minds.</description>
+
+    <!-- Display under Archite tab; change to Physical to test visibility -->
+    <displayCategory>Archite</displayCategory>
+
+    <iconPath>Genes/Jorisbrains</iconPath>
+    <displayOrderInCategory>2057</displayOrderInCategory>
+
+    <biostatCpx>5</biostatCpx>
+    <biostatArc>3</biostatArc>
+    <biostatMet>0</biostatMet>
+
+    <!-- Stat offsets -->
+    <statOffsets>
+      <GlobalLearningFactor>2.0</GlobalLearningFactor>
+      <ResearchSpeed>1.5</ResearchSpeed>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+    </statOffsets>
+
+    <!-- Stat factors -->
+    <statFactors>
+      <GlobalLearningFactor>2.5</GlobalLearningFactor>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
+      <AimingDelayFactor>0.75</AimingDelayFactor>
+      <RangedCooldownFactor>0.75</RangedCooldownFactor>
+    </statFactors>
+
+    <!-- Capacity modifiers -->
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <offset>0.5</offset>
+      </li>
+      <li>
+        <capacity>Sight</capacity>
+        <offset>1.0</offset>
+      </li>
+      <li>
+        <capacity>Hearing</capacity>
+        <offset>1.0</offset>
+      </li>
+      <li>
+        <capacity>Talking</capacity>
+        <offset>2.0</offset>
+      </li>
+    </capMods>
+
+    <!-- Hediffs this gene prevents -->
+    <hediffGiversCannotGive>
+      <li>Dementia</li>
+      <li>Alzheimers</li>
+      <li>Cataract</li>
+    </hediffGiversCannotGive>
+
+    <!-- Aptitudes -->
+    <aptitudes>
+      <Intellectual>5</Intellectual>
+      <Shooting>6</Shooting>
+      <Social>3</Social>
+    </aptitudes>
+
+    <!-- Custom descriptions -->
+    <customEffectDescriptions>
+      <li>Learn faster</li>
+      <li>Research faster</li>
+      <li>Shoot better</li>
+      <li>Psychically immune</li>
+      <li>Improved sight and hearing</li>
+    </customEffectDescriptions>
+
+    <!-- Optional: comment out exclusionTags while testing -->
+    <!--
+    <exclusionTags>
+      <li>Learning</li>
+      <li>Consciousness</li>
+    </exclusionTags>
+    -->
+  </GeneDef>
+
+</Defs>

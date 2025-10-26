@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Abstract base for Joriskin pawns -->
+  <PawnKindDef Name="JoriskinBase" Abstract="True">
+    <race>Joriskin</race>
+	<combatPower>0</combatPower>
+    <apparelMoney>2500~5000</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>3000~5000</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>SpacerMelee</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>ArmorPowered</li>
+    </apparelTags>
+    <initialWillRange>40~80</initialWillRange>
+    <initialResistanceRange>10~20</initialResistanceRange>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>3</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <backstoryCategories>
+      <li>Outlander</li>
+    </backstoryCategories>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Joriskin>1.0</Joriskin>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <!-- Warrior -->
+  <PawnKindDef Name="Joriskin_Warrior" ParentName="JoriskinBase">
+    <defName>Joriskin_Warrior</defName>
+    <label>Joriskin Warrior</label>
+    <combatPower>400</combatPower>
+    <initialWillRange>40~80</initialWillRange>
+    <initialResistanceRange>15~25</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Scholar -->
+  <PawnKindDef Name="Joriskin_Scholar" ParentName="JoriskinBase">
+    <defName>Joriskin_Scholar</defName>
+    <label>Joriskin Scholar</label>
+    <combatPower>200</combatPower>
+    <initialWillRange>40~80</initialWillRange>
+    <initialResistanceRange>10~20</initialResistanceRange>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Spacer</li>
+    </apparelTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>4~10</range>
+      </li>
+      <li>
+        <skill>Intellectual</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Vanguard -->
+  <PawnKindDef Name="Joriskin_Vanguard" ParentName="JoriskinBase">
+    <defName>Joriskin_Vanguard</defName>
+    <label>Joriskin Vanguard</label>
+    <combatPower>500</combatPower>
+    <initialWillRange>40~80</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+</Defs>

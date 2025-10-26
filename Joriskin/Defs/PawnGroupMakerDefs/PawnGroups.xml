@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base Faction for Joriskin -->
+  <FactionDef Name="JorisFactionBase" Abstract="True">
+    <defName>Joriskin</defName>
+	<backstoryCategories>
+	 <li>Outlander</li>
+    </backstoryCategories>
+  <raidLootValueFromPointsCurve>
+   <points>
+    <li>(50, 10)</li>
+    <li>(200, 100)</li>
+    <li>(1000, 500)</li>
+    <li>(5000, 1000)</li>
+    <li>(10000, 5000)</li>
+   </points>
+  </raidLootValueFromPointsCurve>
+  
+  <maxPawnCostPerTotalPointsCurve>
+   <points>
+    <li>(0, 50)</li>
+    <li>(500, 200)</li>
+    <li>(1000, 500)</li>
+    <li>(5000, 1000)</li>
+    <li>(10000, 5000)</li>
+    </points>
+  </maxPawnCostPerTotalPointsCurve>
+
+  </FactionDef>
+
+  <!-- Main Joriskin Faction -->
+  <FactionDef ParentName="JorisFactionBase" Name="TheJoris">
+    <pawnSingular>Joriskin</pawnSingular>
+    <pawnsPlural>Joriskin</pawnsPlural>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <leaderTitle>The Alpha</leaderTitle>
+    <factionIconPath>Genes/Jorisbrains</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <techLevel>Ultra</techLevel>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+
+    <!-- Xenotype set -->
+    <xenotypeSet Inherit="True">
+      <xenotypeChances>
+        <Joriskin>999</Joriskin>
+      </xenotypeChances>
+    </xenotypeSet>
+
+    <!-- Pawn groups -->
+    <pawnGroupMakers>
+
+      <!-- Combat raid group -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+      </li>
+
+      <!-- Settlement groups -->
+      <li>
+        <kindDef>Settlement</kindDef>
+        <commonality>30</commonality>
+      </li>
+
+      <!-- Traders -->
+      <li>
+        <kindDef>Trader</kindDef>
+        <commonality>20</commonality>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>3</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+      </li>
+
+    </pawnGroupMakers>
+
+  </FactionDef>
+
+</Defs>

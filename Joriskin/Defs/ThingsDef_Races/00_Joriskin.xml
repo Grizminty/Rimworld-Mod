@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Human">
+    <defName>Joriskin</defName>
+    <label>Joriskin</label>
+    <description>A highly intelligent and resilient humanoid species known for strength and intellect.</description>
+    <race>
+      <body>Human</body>
+      <intelligence>Humanlike</intelligence>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+      <leatherDef>Leather_Human</leatherDef>
+      <meatDef>Meat_Human</meatDef>
+    </race>
+    
+
+    <!-- Base stats -->
+    <statBases>
+      <MeleeHitChance>0.8</MeleeHitChance>
+      <PainShockThreshold>0.7</PainShockThreshold>
+    </statBases>
+  </ThingDef>
+</Defs>
